@@ -3,6 +3,7 @@
 @use '_mixins' as m;
 @use '_class' as c;
 @use '_maps' as maps;
+@use '_anims' as a;
 
 * {
     margin: 0;
@@ -47,10 +48,34 @@ section {
 
 @include m.position-fixed("icon-bar", "top", 60px, "right", 50px);
 
-.fonts-small {
+.font-small {
     @if map-has-key(maps.$fonts, small){
         font-size: map-get(maps.$fonts, small);
     } @else {
         font-size: 12px;
+    }
+}
+
+h1 {
+    font-size: map-get(maps.$fonts, h1);
+}
+
+h2 {
+    font-size: map-get(maps.$fonts, h2);
+}
+
+// Boucle @For
+@for $i from 1 through 4 {
+    main section:nth-child(#{$i}){
+        background: lighten(v.$title-color, $i * 10%);
+        opacity: 0;
+    }
+}
+
+@for $i from 1 through 4 {
+    main section:nth-child(#{$i}){
+        //variable local
+        $delay: $i * 500ms;
+        animation: fade-in .7s ease-in-out $delay forwards;
     }
 }

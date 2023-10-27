@@ -42,7 +42,7 @@ $button-width: 150px;
 @mixin icon-fontawesome ($name, $content, $family) {
   .icon-#{$name}::before {
     content: "#{$content}";
-    font: var(--fa-font-solid);
+    font: var(#{$family});
   
   }
 }

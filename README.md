@@ -90,10 +90,12 @@ Lors de ma formation chez Webforce3 j'ai découvert et essayé le language SASS 
 ## Roadmap
 
 - [x] Découverte du fonctionnement du language
+- [x] Découverte des Variables / Variable local
 - [x] Découverte des fonction
 - [x] Découverte des mixins
 - [x] Découverte des class silencieuse
 - [x] Découverte des maps
+- [x] Découverte boucle FOR
 
 
 See the [open issues](https://github.com/beloow/SASS-Initiation/issues) for a full list of proposed features (and known issues).
