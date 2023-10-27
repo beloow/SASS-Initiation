@@ -47,6 +47,10 @@ $button-width: 150px;
   }
 }
 
-@mixin position-fixed($top-or-bottom, $value-top-or-bottom, $left-or-right, $value-left-or-right){
-
+@mixin position-fixed($name, $top-or-bottom, $value-top-or-bottom, $left-or-right, $value-left-or-right){
+  .position-fixed-#{$name} {
+    position: fixed;
+    #{$top-or-bottom}: $value-top-or-bottom;
+    #{$left-or-right}: $value-left-or-right;
+  }
 }

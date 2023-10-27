@@ -91,6 +91,8 @@ Lors de ma formation chez Webforce3 j'ai découvert et essayé le language SASS 
 
 - [x] Découverte du fonctionnement du language
 - [x] Découverte des fonction
+- [x] Découverte des mixins
+- [x] Découverte des class silencieuse
 
 
 See the [open issues](https://github.com/beloow/ryanqueva.fr/issues) for a full list of proposed features (and known issues).

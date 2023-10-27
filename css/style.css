@@ -53,10 +53,6 @@ body {
 
 section {
   min-height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
 }
 
 #container {
@@ -96,4 +92,10 @@ section {
 .icon-cart::before {
   content: "\f07a";
   font: var(--fa-font-solid);
+}
+
+.position-fixed-icon-bar {
+  position: fixed;
+  top: 60px;
+  right: 50px;
 }

@@ -17,10 +17,6 @@ body {
 
 section {
     min-height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
 }
 
 #container {
@@ -47,3 +43,5 @@ section {
 }
 
 @include m.icon-fontawesome("cart", "\f07a", "--fa-font-solid");
+
+@include m.position-fixed("icon-bar", "top", 60px, "right", 50px);
