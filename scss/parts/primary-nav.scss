@@ -1,0 +1,21 @@
+
+@use '../_var' as v;
+@use '../class' as c;
+
+
+#primary-nav {
+    background: v.$title-color;
+    ul {
+        @extend .align-horiz;
+        a {
+            display: block;
+            padding: 20px;
+            color: v.$link-color;
+            &:hover {
+                background: v.$link-background;
+            }
+
+        }
+    }
+}
+

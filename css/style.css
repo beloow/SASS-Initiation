@@ -1,0 +1,83 @@
+/*ffonctions proprietaire SASS: */
+/* du gris au noir*/
+/* du gris au blanc*/
+.ombre {
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* class silencieuse (non utilisee dans le html) */
+.button-send {
+  box-shadow: 5px 5px 10px 1px rgb(0, 0, 0);
+}
+
+.align-horiz, #primary-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+#primary-nav {
+  background: #305e92;
+}
+#primary-nav ul a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+}
+#primary-nav ul a:hover {
+  background: red;
+}
+
+/* mixin avec @content: possibilite de rajouter des proprietes dans son utulisation (@include) */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: grey;
+}
+
+section {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#container {
+  max-width: 1440px;
+}
+
+.button-send {
+  /* mixin */
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem;
+  border: none;
+  display: block;
+  margin: 0.5rem auto 0;
+  width: 150px;
+  color: #fff;
+  background-color: grey;
+  color: #fff;
+  /* class silencieuse (non utilisee dans le html) */
+}
+.button-send:hover {
+  cursor: pointer;
+  background-color: white;
+  color: grey;
+}
+
+#mixin-content {
+  width: 50%;
+}
+#mixin-content h2 {
+  background: red;
+  color: #fff;
+}

@@ -1,0 +1,46 @@
+@use '_var' as v;
+@use 'parts/primary-nav' ;
+@use '_mixins' as m;
+@use '_class' as c;
+
+* {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: v.$main-color;
+}
+
+section {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#container {
+    max-width: v.$width-container;
+}
+
+.button-send {
+    /* mixin */
+    @include m.button;
+    background-color: v.$main-color;
+    color: v.$link-color;
+    /* class silencieuse (non utilisee dans le html) */
+    @extend %ombre;
+  }
+
+  @include m.inserer-bloc {
+    width: 50%;;
+    h2 {
+        background: v.$link-background;
+        color: #fff
+    }
+  }
+

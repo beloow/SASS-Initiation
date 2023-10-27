@@ -1,0 +1,13 @@
+.ombre {
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,.7);
+}
+
+/* class silencieuse (non utilisee dans le html) */
+%ombre {
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0, 1);
+}
+
+.align-horiz {
+    display: flex;
+    justify-content: center;
+}

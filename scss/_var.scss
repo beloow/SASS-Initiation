@@ -1,0 +1,11 @@
+$main-color: grey;
+$title-color: #305e92;
+$link-color: #fff;
+$link-background:red;
+$p-color: #a3a3a3;
+$body-font: "Trebuchet MS", sans-serif;
+$width-container: 1440px;
+/*ffonctions proprietaire SASS: */
+$dark-background-color:darken($main-color, 100%); /* du gris au noir*/
+$light-background-color:lighten($main-color, 50%); /* du gris au blanc*/
+

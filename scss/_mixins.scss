@@ -1,0 +1,33 @@
+@use '_var' as v;
+
+$button-width: 150px;
+
+@mixin button {
+    font: {
+      family: v.$body-font;
+      size: 1.25rem;
+    }
+    text: {
+      decoration: none;
+      align: center;
+    }
+    padding: .5rem;
+    border: none;
+    display: block;   
+    margin: .5rem auto 0;
+    width: $button-width;
+    color: v.$link-color;
+    &:hover {
+      cursor: pointer;
+      background-color: v.$light-background-color;
+      color: v.$main-color;
+    }
+  }
+
+  /* mixin avec @content: possibilite de rajouter des proprietes dans son utulisation (@include) */
+  @mixin inserer-bloc {
+    #mixin-content {
+        @content;
+    }
+  }
+

@@ -1,0 +1,24 @@
+/*ffonctions proprietaire SASS: */
+/* du gris au noir*/
+/* du gris au blanc*/
+.ombre {
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* class silencieuse (non utilisee dans le html) */
+.align-horiz, #primary-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+#primary-nav {
+  background: #305e92;
+}
+#primary-nav ul a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+}
+#primary-nav ul a:hover {
+  background: red;
+}
