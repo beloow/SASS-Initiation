@@ -42,8 +42,6 @@
     <a href="https://github.com/beloow/SASS-Initiation/index.html"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://beloow.github.io/SASS-Initiation/">View Demo</a>
-    ·
     <a href="https://github.com/beloow/SASS-Initiation/issues">Report Bug</a>
     ·
     <a href="https://github.com/beloow/SASS-Initiation/issues">Request Feature</a>
