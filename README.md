@@ -93,9 +93,10 @@ Lors de ma formation chez Webforce3 j'ai découvert et essayé le language SASS 
 - [x] Découverte des fonction
 - [x] Découverte des mixins
 - [x] Découverte des class silencieuse
+- [x] Découverte des maps
 
 
-See the [open issues](https://github.com/beloow/ryanqueva.fr/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/beloow/SASS-Initiation/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +106,7 @@ See the [open issues](https://github.com/beloow/ryanqueva.fr/issues) for a full 
 
 Ryan QUEVA - [Linkedin](https://www.linkedin.com/in/ryan-queva) - Contact@ryanqueva.fr
 
-Project Link: [https://github.com/beloow/ryanqueva.fr](https://github.com/beloow/ryanqueva.fr)
+Project Link: [https://github.com/beloow/SASS-Initiation](https://github.com/beloow/SASS-Initiation)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

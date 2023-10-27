@@ -2,6 +2,7 @@
 @use 'parts/primary-nav';
 @use '_mixins' as m;
 @use '_class' as c;
+@use '_maps' as maps;
 
 * {
     margin: 0;
@@ -45,3 +46,11 @@ section {
 @include m.icon-fontawesome("cart", "\f07a", "--fa-font-solid");
 
 @include m.position-fixed("icon-bar", "top", 60px, "right", 50px);
+
+.fonts-small {
+    @if map-has-key(maps.$fonts, small){
+        font-size: map-get(maps.$fonts, small);
+    } @else {
+        font-size: 12px;
+    }
+}

@@ -99,3 +99,7 @@ section {
   top: 60px;
   right: 50px;
 }
+
+.fonts-small {
+  font-size: 0.8rem;
+}
