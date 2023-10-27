@@ -11,3 +11,9 @@
     display: flex;
     justify-content: center;
 }
+
+.icon::before{
+    display: block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}

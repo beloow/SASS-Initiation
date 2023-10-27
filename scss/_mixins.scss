@@ -3,31 +3,50 @@
 $button-width: 150px;
 
 @mixin button {
-    font: {
-      family: v.$body-font;
-      size: 1.25rem;
-    }
-    text: {
-      decoration: none;
-      align: center;
-    }
-    padding: .5rem;
-    border: none;
-    display: block;   
-    margin: .5rem auto 0;
-    width: $button-width;
-    color: v.$link-color;
-    &:hover {
-      cursor: pointer;
-      background-color: v.$light-background-color;
-      color: v.$main-color;
-    }
+  font: {
+    family: v.$body-font;
+    size: 1.25rem;
   }
 
-  /* mixin avec @content: possibilite de rajouter des proprietes dans son utulisation (@include) */
-  @mixin inserer-bloc {
-    #mixin-content {
-        @content;
-    }
+  text: {
+    decoration: none;
+    align: center;
   }
 
+  padding: .5rem;
+  border: none;
+  display: block;
+  margin: .5rem auto 0;
+  width: $button-width;
+  color: v.$link-color;
+
+  &:hover {
+    cursor: pointer;
+    background-color: v.$light-background-color;
+    color: v.$main-color;
+  }
+}
+
+/* mixin avec @content: possibilite de rajouter des proprietes dans son utulisation (@include) */
+@mixin inserer-bloc {
+  #mixin-content {
+    @content;
+  }
+}
+
+.icon-cart::before{
+  content: "\f07a";
+  font: var(--fa-font-solid);
+}
+
+@mixin icon-fontawesome ($name, $content, $family) {
+  .icon-#{$name}::before {
+    content: "#{$content}";
+    font: var(--fa-font-solid);
+  
+  }
+}
+
+@mixin position-fixed($top-or-bottom, $value-top-or-bottom, $left-or-right, $value-left-or-right){
+
+}

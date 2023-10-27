@@ -15,6 +15,12 @@
   justify-content: center;
 }
 
+.icon::before {
+  display: block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 #primary-nav {
   background: #305e92;
 }
@@ -28,6 +34,11 @@
 }
 
 /* mixin avec @content: possibilite de rajouter des proprietes dans son utulisation (@include) */
+.icon-cart::before {
+  content: "\f07a";
+  font: var(--fa-font-solid);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -80,4 +91,9 @@ section {
 #mixin-content h2 {
   background: red;
   color: #fff;
+}
+
+.icon-cart::before {
+  content: "\f07a";
+  font: var(--fa-font-solid);
 }
